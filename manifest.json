@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "odt-paywall-remover",
+    "version": "1.0",
+    "description": "Remove paywalls from ODT articles",
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.odt.co.nz/*"
+            ],
+            "js": [
+                "extension.js"
+            ]
+        }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "odt-paywall-remover@goldentreedev@gmail.com"
+        }
+    }
+}
